@@ -4,7 +4,7 @@ from pyspark.sql.types import StructType, StructField, IntegerType, FloatType, S
 
 from pyspark.sql.functions import sum, col, desc
 
-spark = SparkSession.builder.appName("ResultadosSanCiro").master("local[*]").getOrCreate()
+spark = SparkSession.builder.appName("ResultadosSanSiro").master("local[*]").getOrCreate()
 
 # Create schema when reading customer-orders
 resultados = StructType([\
